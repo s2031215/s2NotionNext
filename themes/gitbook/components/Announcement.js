@@ -1,5 +1,6 @@
 // import { useGlobal } from '@/lib/global'
 import dynamic from 'next/dynamic'
+import Badsoup from '@/components/Badsoup'
 
 const NotionPage = dynamic(() => import('@/components/NotionPage'))
 
@@ -12,6 +13,9 @@ const Announcement = ({ notice, className }) => {
             {notice && (<div id="announcement-content">
             <NotionPage post={notice} />
         </div>)}
+          <div id="badsoup">
+            {<Badsoup />}
+          </div>
         </section>
     </div>
   } else {
