@@ -5,9 +5,9 @@ const CONFIG = {
   AUTO_SORT: process.env.NEXT_PUBLIC_GITBOOK_AUTO_SORT || true, // 是否自动按分类名 归组排序文章；自动归组可能会打乱您Notion中的文章顺序
 
   // 菜单
-  MENU_CATEGORY: false, // 显示分类
-  MENU_TAG: false, // 显示标签
-  MENU_ARCHIVE: false, // 显示归档
+  MENU_CATEGORY: true, // 显示分类
+  MENU_TAG: true, // 显示标签
+  MENU_ARCHIVE: true, // 显示归档
   MENU_SEARCH: false, // 显示搜索
 
   // Widget
