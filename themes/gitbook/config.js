@@ -8,7 +8,7 @@ const CONFIG = {
   GITBOOK_MENU_CATEGORY: true, // 显示分类
   GITBOOK_BOOK_MENU_TAG: true, // 显示标签
   GITBOOK_MENU_ARCHIVE: true, // 显示归档
-  GITBOOK_MENU_SEARCH: true, // 显示搜索
+  GITBOOK_MENU_SEARCH: false, // 显示搜索
 
   // Widget
   GITBOOK_WIDGET_REVOLVER_MAPS: process.env.NEXT_PUBLIC_WIDGET_REVOLVER_MAPS || 'false', // 地图插件
