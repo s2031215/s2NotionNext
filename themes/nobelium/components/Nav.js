@@ -63,7 +63,7 @@ const Nav = props => {
                   : (
                         <p className="ml-2 font-medium text-gray-800 dark:text-gray-300 header-name whitespace-nowrap">
                             {siteConfig('TITLE')}
-                            {/* ,{' '}<span className="font-normal">{siteConfig('HOME_BANNER_IMAGE')}</span> */}
+                            {/* ,{' '}<span className="font-normal">{siteConfig('DESCRIPTION')}</span> */}
                         </p>
                     )}
             </div>
@@ -104,12 +104,12 @@ const NavBar = props => {
   return (
         <div className="flex-shrink-0 flex">
             <ul className="hidden md:flex flex-row">
-                {links?.map(link => <MenuItemDrop key={link?.id} link={link} />)}
+                {links?.map((link, index) => <MenuItemDrop key={index} link={link} />)}
             </ul>
             <div className='md:hidden'>
                 <Collapse collapseRef={collapseRef} isOpen={isOpen} type='vertical' className='fixed top-16 right-6'>
                     <div className='dark:border-black bg-white dark:bg-black rounded border p-2 text-sm'>
-                        {links?.map(link => <MenuItemCollapse key={link?.id} link={link} onHeightChange={(param) => collapseRef.current?.updateCollapseHeight(param)}/>)}
+                        {links?.map((link, index) => <MenuItemCollapse key={index} link={link} onHeightChange={(param) => collapseRef.current?.updateCollapseHeight(param)}/>)}
                     </div>
                 </Collapse>
             </div>
